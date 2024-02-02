@@ -19,7 +19,7 @@
            <label for="inputEmail4" class="form-label">Nome:</label>
            <input class="form-control" type="text"  id="nome" name="nome" placeholder="infrome seu nome" required/>
           </div><br>
-          <div class="col-md-5">
+          <div class="col-md-5"> 
              <label for="inputEmail4" class="form-label">Telefone:</label>
           <input class="form-control" type="text" id="telefone" name="telefone" placeholder="11 9999-999" required/><br>
           </div>
