@@ -12,5 +12,13 @@ Route::get('/cadastrar',[\App\Http\Controllers\cadastroUsers::class,'index']);
 Route::post('/cadastrar/user',[\App\Http\Controllers\cadastroUsers::class,'store']);//Toda vez que o botão enviar for acionado
 
 
-//rota da pagina de agenda
+//rota da pagina de login
+Route::get('/login',[\App\Http\Controllers\loginUser::class,'index']);
+Route::post('login/user',[\App\Controllers\loginUser::class,'store']);
+
+//rota da agenda
+Route::get('/agenda',[\App\Http\Controllers\agendaTarefas::class,'index']);
+Route::post('agenda/tarefa',[\App\Http\Controllers\agendaTarefas::class,'store']);
+
+
 

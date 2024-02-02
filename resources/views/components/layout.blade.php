@@ -10,38 +10,35 @@
   </body>
 </head>
 <body>
-
+  <style>
+    body{
+      background-color:#d8f3dc;
+    }
+  </style>
    
     <h1>{{$title}}</h1>
 
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Features</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Pricing</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-        </li>
-      </ul>
+    <nav class="navbar navbar-expand-lg bg-success">
+    <div class="container-fluid">
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+        </ul>
     </div>
-  </div>
-</nav>
-
+  </nav>
     <div>
        {{$slot}}<!--Quem vai ser substituida pelo conteudo-->
     </div>
 
+    </div>
+    <!-- FOOTER --> 
+    <footer class=" bg-success text-white pt-5 pb-4">
+      <p class="float-end"><a href="#">De volta ao topo</a></p>
+      <div class="cointainer text-center text-md-left">
+        <div class="row text-center text-md-left"></div>
+        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+</footer>
 </body>
 </html>

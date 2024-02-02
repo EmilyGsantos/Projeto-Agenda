@@ -30,7 +30,7 @@ class cadastroUsers extends Controller
       $model->senha = $senhaUsuario;
       $model->save();//armazenar os dados no BD
 
-      return redirect('/cadastrar');
+      return redirect('/login');
    }//fim do metodo
 
 }//fim da classe
