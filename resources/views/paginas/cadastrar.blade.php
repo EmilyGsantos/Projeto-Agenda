@@ -32,7 +32,7 @@
            <input class="form-control" type="password"  id="senha" name="senha" required/><br>  
           </div>
          <div class="col-12">
-           <button class="btn btn-outline-primary " type="submit">Enviar</button>
+           <button class="btn btn-outline-primary " type="submit">Cadastrar</button>
          </div>
         </form>
       </div>

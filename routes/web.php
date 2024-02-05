@@ -13,8 +13,8 @@ Route::post('/cadastrar/user',[\App\Http\Controllers\cadastroUsers::class,'store
 
 
 //rota da pagina de login
-Route::get('/login',[\App\Http\Controllers\loginUser::class,'index']);
-Route::post('login/user',[\App\Controllers\loginUser::class,'store']);
+Route::get('/login',[\App\Http\Controllers\Auth\loginUser::class,'index']);
+Route::post('login/user',[\App\Controllers\Auth\loginUser::class,'store']);
 
 //rota da agenda
 Route::get('/agenda',[\App\Http\Controllers\agendaTarefas::class,'index']);

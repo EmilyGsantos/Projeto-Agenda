@@ -14,6 +14,16 @@
     body{
       background-color:#d8f3dc;
     }
+
+    .form-agenda{
+        background-color:#ffe1a8;
+        border-color:#f4a261;
+        border-radius:12px;
+        
+        top: 20%;
+        left: 49%;
+          
+    }
   </style>
    
     <h1>{{$title}}</h1>
@@ -23,7 +33,10 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link active" aria-current="page" href="cadastrar">Home</a>
+          </li>
+          <li>
+           <a class="nav-link active" aria-current="page" href="agenda">Agenda</a>
           </li>
         </ul>
     </div>

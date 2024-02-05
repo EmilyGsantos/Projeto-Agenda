@@ -3,19 +3,21 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+// passando o controlador da model
+use App\Models\cadastrarUserModel;
 
 class loginUser extends Controller
 {
     public function index()
     {
-       return view('login');
+       return view('paginas.login');
     }
 
-    public function Auth(Request $request)
+    public function store(Request $request)
     {
         if((['email' == $emailUsuario && 'senha'== $senhaUsuario ]))
         {
-            dd('Logou');
+            return redirect('paginas.agenda');
         }else{
             dd('não logou');
         }
