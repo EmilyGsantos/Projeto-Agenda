@@ -1,4 +1,4 @@
-<x-layout>
+<x-layout tile="Agenda de tarefas">
     <h1>Login</h1>
 
     <div class="form-login">

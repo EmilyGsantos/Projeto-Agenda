@@ -20,5 +20,14 @@ Route::post('login/user',[\App\Controllers\Auth\loginUser::class,'store']);
 Route::get('/agenda',[\App\Http\Controllers\agendaTarefas::class,'index']);
 Route::post('agenda/tarefa',[\App\Http\Controllers\agendaTarefas::class,'store']);
 
+// rota do editar
+Route::get('/editar/{id}',[\App\Http\Controllers\cadastroUsers::class,'editar']);
 
+// rota do consultar
+Route::get('/consultar',[\App\Http\Controllers\cadastroUsers::class,'consultar']);
 
+//rota do atualizar 
+Route::get('/atualizar/{id}',[\App\Http\Controllers\cadastroUsers::class,'atualizar']);
+
+//rota do excluir
+Route::get('/excluir/{id}',[\App\Http\Controllers\cadastroUsers::class,'excluir']);

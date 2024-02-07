@@ -30,7 +30,36 @@ class cadastroUsers extends Controller
       $model->senha = $senhaUsuario;
       $model->save();//armazenar os dados no BD
 
-      return redirect('/login');
+      return redirect('/consultar');
    }//fim do metodo
 
+   public function atualizar(Request $request)
+   {
+      cadastrarUserModel::where('id', $id)->update($request->all());
+      return redirect('consultar');
+
+   }// fim da função atualizar
+
+   public function excluir(Request $request, $id)
+   {
+      cadastrarUserModel::where('id', $id)->delete($request->all());
+      return redirect('consultar');
+
+   }// fim do excluir
+
+
+   public function consultar()
+   {
+    $iduser =  cadastrarUserModel::all();
+
+    return view('paginas.consultar', compact('iduser')); //compact passa os dados de uma pag para outra
+  }// fim da função consultar
+
+  public function editar($id)
+  {
+    $dadoedit = cadastrarUserModel::findOrFail($id);
+
+    return view('paginas.editar', compact('dadoedit'));
+  }// fim da função editar
+   
 }//fim da classe

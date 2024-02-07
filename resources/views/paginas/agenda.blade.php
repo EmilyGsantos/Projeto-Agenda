@@ -24,9 +24,9 @@
          <input type="date" class="form-control" name="datahora" id="datahora">
        </div>
      </div>
-      <button type="submit" class="btn btn-primary">Criar Tarefa</button>
-      <button type="submit" class="btn btn-primary">Excluir Tarefa</button>
-      <button type="submit" class="btn btn-primary">Consultar</button>
+      <button type="submit" class="btn btn-primary" >Criar Tarefa</button>
+      <a type="submit" class="btn btn-primary" >Excluir</a>
+      <a type="submit" class="btn btn-primary" >Consultar</a>
     </form><br>
 
 </div>
