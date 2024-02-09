@@ -10,7 +10,7 @@
 
    <h1>Crie sua tarefa abaixo:</h1><br><br>
     <div class="text-center">
-      <form class="form-agenda" action="agenda/tarefa" method="POST">
+      <form  class="form-agenda shadow-lg  rounded " action="agenda/tarefa" method="POST">
         @csrf
       <div class="row mb-3">
         <label for="inputEmail3" class="col-sm-2 col-form-label">Nome da Tarefa</label>

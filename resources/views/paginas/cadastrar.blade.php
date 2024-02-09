@@ -1,18 +1,10 @@
 
 <x-layout  title="Agenda de tarefas" >
- <div class="cointainer">
-      @foreach($dados as $dado) <!--// os dados que estão vindo da  conttroller se tornam a variavel $dado -->
-        <li class="list-group-item">{{$dado->nome}}</li>
-        <li class="list-group-item">{{$dado->telefone}}</li>
-        <li class="list-group-item">{{$dado->email}}</li>
-        <li class="list-group-item">{{$dado->senha}}</li>
-        <br><br>
-      @endforeach
-   </div>
 
-    <h1 class="text-center">Cadastre-se</h1>
+
+    <h1 class="text-center" style="color: #52796f;">Cadastre-se</h1>
    
-  <div class="bg-light border border-4 border-secundary-subtle  m-5">
+  <div class="bg-light border border-4 border-secundary-subtle  m-5 shadow-lg p-3 mb-5 bg-body-tertiary rounded ">
         <form class="row g-2" action="cadastrar/user" method="POST">
           @csrf  <!--segurança-->
           <div class="col-md-5">
@@ -25,7 +17,7 @@
           </div>
          <div class="col-md-5">
            <label for="inputEmail4" class="form-label">Email:</label>
-           <input class="form-control" type="email"  id="email" name="email" required/><br>
+           <input class="form-control" type="email"  id="email" name="email" placeholder="agendalaravel0@gmail.com" required/><br>
          </div>
           <div class="col-md-5">
             <label for="inputPassword4" class="form-label">Senha:</label>

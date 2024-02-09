@@ -12,7 +12,7 @@
 <body>
   <style>
     body{
-      background-color:#d8f3dc;
+      background-color:#eff6e0;
     }
 
     .form-agenda{
@@ -22,7 +22,6 @@
         
         top: 20%;
         left: 49%;
-          
     }
   </style>
    
@@ -33,11 +32,14 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="cadastrar">Home</a>
+            <a class="nav-link active text-light" aria-current="page" href="cadastrar">Home</a>
           </li>
+            <li>
+              <a class="nav-link active text-light" aria-current="page" href="consultar">Consultar</a>
+            </li>
           <li>
 
-           <a class="nav-link active" aria-current="page" href="agenda">Agenda
+           <a class="nav-link active text-light" aria-current="page" href="agenda">Agenda
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-journal-bookmark-fill" viewBox="0 0 16 16">
               <path fill-rule="evenodd" d="M6 1h6v7a.5.5 0 0 1-.757.429L9 7.083 6.757 8.43A.5.5 0 0 1 6 8z"/>
               <path d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2"/>
@@ -46,7 +48,7 @@
          </a>
           </li>
           <li>
-          <a class="nav-link active" aria-current="page" href="login">
+          <a class="nav-link active text-light" aria-current="page" href="login">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
               <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
               <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
@@ -61,12 +63,7 @@
     </div>
 
     </div>
-    <!-- FOOTER --> 
-    <footer class=" bg-success text-white pt-5 pb-4">
-      <p class="float-end"><a href="#">De volta ao topo</a></p>
-      <div class="cointainer text-center text-md-left">
-        <div class="row text-center text-md-left"></div>
-        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+    
 </footer>
 </body>
 </html>

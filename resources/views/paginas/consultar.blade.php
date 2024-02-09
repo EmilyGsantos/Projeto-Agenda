@@ -2,7 +2,7 @@
  @csrf
 
  <br><br>
-    <table class="table table-bordered border-primary">
+    <table class="table table-success border-secundary">
     <thead>
         <tr>
         <th scope="col">id</th>
@@ -10,16 +10,17 @@
         <th scope="col">telefone</th>
         <th scope="col">e-mail</th>
         <th scope="col">senha</th>
+        <th scope="col"></th>
         </tr>
     </thead>
     <tbody>
        @foreach($iduser as $id)
         <tr>
-            <th scope="row">{$id->id}</th>
-            <td>{$id->nome}</td>
-            <td>{$id->telefone}</td>
-            <td>@{$id->email}</td>
-            <td>@{$id->senha}</td>
+            <th scope="row">{{$id->id}}</th>
+            <td>{{$id->nome}}</td>
+            <td>{{$id->telefone}}</td>
+            <td>{{$id->email}}</td>
+            <td>{{$id->senha}}</td>
         <td>
             <a href="/editar/{{$id->id}}">
               

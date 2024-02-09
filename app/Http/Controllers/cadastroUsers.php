@@ -33,7 +33,7 @@ class cadastroUsers extends Controller
       return redirect('/consultar');
    }//fim do metodo
 
-   public function atualizar(Request $request)
+   public function atualizar(Request $request, $id)
    {
       cadastrarUserModel::where('id', $id)->update($request->all());
       return redirect('consultar');
